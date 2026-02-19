@@ -1,10 +1,6 @@
-# ==========================================
-# Configuration File
-# ==========================================
-
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 
-MODEL_PATH = str("models" / "pharmaguard_random_forest.pkl")
-FEATURES_PATH = str("models" / "model_features.pkl")
+MODEL_PATH = BASE_DIR / "models" / "pharmaguard_random_forest.pkl"
+FEATURES_PATH = BASE_DIR / "models" / "model_features.pkl"
